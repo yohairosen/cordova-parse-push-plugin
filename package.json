@@ -1,0 +1,29 @@
+{
+  "name": "phonegap-parse-plugin",
+  "version": "0.1.0",
+  "description": "phonegap parse plugin",
+  "cordova": {
+    "id": "com.parse.cordova.core.pushplugin",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grrrian/phonegap-parse-plugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8"
+  ],
+  "author": "grrrian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grrrian/phonegap-parse-plugin/issues"
+  },
+  "homepage": "https://github.com/grrrian/phonegap-parse-plugin#readme"
+}
