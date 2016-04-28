@@ -1,6 +1,8 @@
 Phonegap Parse.com Plugin
 =========================
 
+Note (April 2016): Given the upcoming death of Parse.com, this plugin will not be updated in the future. It is also not compatible with Android 6.0+ (see compatibility notes below).
+
 Phonegap/Cordova 3.0+ plugin for Parse.com push service
 
 Using [Parse.com's](http://parse.com) REST API for push requires the installation id, which isn't available in JS
@@ -190,4 +192,4 @@ Compatibility
 -------------
 - Phonegap/Cordova > 3.0
 - iOS > 7 (on versions lower than 7, you will not receive push notification callbacks when the app is running in foreground)
-- Android > 2.3
+- Android > 2.3 and < 6.0
