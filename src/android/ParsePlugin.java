@@ -2,8 +2,9 @@ package org.apache.cordova.core;
 
 import android.app.Application;
 import android.util.Log;
+import android.content.Context;
 
-import java.util.Set;
+import java.util.List;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -40,8 +41,9 @@ public class ParsePlugin extends CordovaPlugin {
     public static void initializeParseWithApplication(Application app) {
         String appId = getStringByKey(app, "parse_app_id");
         String clientKey = getStringByKey(app, "parse_client_key");
+        //Log.d(TAG, "Initializing with parse_app_id: " + appId + " and parse_client_key:" + clientKey);
+
         Parse.enableLocalDatastore(app);
-        Log.d(TAG, "Initializing with parse_app_id: " + appId + " and parse_client_key:" + clientKey);
         Parse.initialize(app, appId, clientKey);
     }
 
@@ -105,7 +107,7 @@ public class ParsePlugin extends CordovaPlugin {
                 try {
                     String appId = args.getString(0);
                     String clientKey = args.getString(1);
-                    Parse.initialize(cordova.getActivity(), appId, clientKey);
+                  //  Parse.initialize(cordova.getActivity(), appId, clientKey);
                     ParseInstallation.getCurrentInstallation().saveInBackground();
                     callbackContext.success();
                 } catch (JSONException e) {
@@ -136,7 +138,7 @@ public class ParsePlugin extends CordovaPlugin {
     private void getSubscriptions(final CallbackContext callbackContext) {
         cordova.getThreadPool().execute(new Runnable() {
             public void run() {
-                 Set<String> subscriptions = PushService.getSubscriptions(cordova.getActivity());
+                 List<String> subscriptions = ParseInstallation.getCurrentInstallation().getList("subscriptions");
                  callbackContext.success(subscriptions.toString());
             }
         });
