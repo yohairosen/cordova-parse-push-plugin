@@ -1,7 +1,7 @@
-Phonegap Parse.com Plugin
+Cordova Parse.com Plugin
 =========================
 
-Note (April 2016): Given the upcoming death of Parse.com, this plugin will not be updated in the future. It is also not compatible with Android 6.0+ (see compatibility notes below).
+Note: Updated to support Android 6.0+
 
 Phonegap/Cordova 3.0+ plugin for Parse.com push service
 
@@ -24,8 +24,8 @@ Installation
 Pick one of these two commands:
 
 ```
-phonegap local plugin add https://github.com/grrrian/phonegap-parse-plugin --variable APP_ID=PARSE_APP_ID --variable CLIENT_KEY=PARSE_CLIENT_KEY
-cordova plugin add https://github.com/grrrian/phonegap-parse-plugin --variable APP_ID=PARSE_APP_ID --variable CLIENT_KEY=PARSE_CLIENT_KEY
+phonegap local plugin add https://github.com/yohairosen/cordova-parse-push-plugin --variable APP_ID=PARSE_APP_ID --variable CLIENT_KEY=PARSE_CLIENT_KEY
+cordova plugin add https://github.com/yohairosen/cordova-parse-push-plugin --variable APP_ID=PARSE_APP_ID --variable CLIENT_KEY=PARSE_CLIENT_KEY
 ```
 
 Initial Setup
@@ -192,4 +192,4 @@ Compatibility
 -------------
 - Phonegap/Cordova > 3.0
 - iOS > 7 (on versions lower than 7, you will not receive push notification callbacks when the app is running in foreground)
-- Android > 2.3 and < 6.0
+- Android > 2.3 
