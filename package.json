@@ -1,5 +1,5 @@
 {
-  "name": "phonegap-parse-plugin",
+  "name": "cordova-parse-push-plugin",
   "version": "0.1.0",
   "description": "cordova parse push plugin",
   "cordova": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yohairosen/phonegap-parse-plugin.git"
+    "url": "git+https://github.com/yohairosen/cordova-parse-push-plugin"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -23,7 +23,7 @@
   "author": "yohairosen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yohairosen/phonegap-parse-plugin/issues"
+    "url": "https://github.com/yohairosen/cordova-parse-push-plugin/issues"
   },
-  "homepage": "https://github.com/yohairosen/phonegap-parse-plugin#readme"
+  "homepage": "https://github.com/yohairosen/cordova-parse-push-plugin#readme"
 }

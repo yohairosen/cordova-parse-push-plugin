@@ -15,7 +15,10 @@
         <preference name="APP_ID" />
         <preference name="CLIENT_KEY" />
 
-        <config-file target="res/xml/config.xml" parent="/*">
+      <hook type="after_prepare_add" src="scripts/android_app_name.js"/>
+
+
+      <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ParsePlugin">
                 <param name="android-package" value="org.apache.cordova.core.ParsePlugin" />
             </feature>
