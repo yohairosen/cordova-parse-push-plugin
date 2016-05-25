@@ -15,7 +15,7 @@
         <preference name="APP_ID" />
         <preference name="CLIENT_KEY" />
 
-      <hook type="after_prepare_add" src="scripts/android_app_name.js"/>
+      <hook type="after_plugin_add" src="scripts/android_app_name.js"/>
 
 
       <config-file target="res/xml/config.xml" parent="/*">
