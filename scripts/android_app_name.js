@@ -2,8 +2,6 @@
 
 module.exports = function(context) {
 
-    console.log(context);
-
     var fs = context.requireCordovaModule('fs'),
         path = context.requireCordovaModule('path');
 

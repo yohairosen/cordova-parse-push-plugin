@@ -155,39 +155,6 @@ Usage
 </script>
 ```
 
-Quirks
-------
-
-### Android
-
-Parse needs to be initialized once in the `onCreate` method of your application class using the `initializeParseWithApplication` method.
-
-If you don’t have an application class (which is most likely the case for a Cordova app), you can create one using this template:
-
-```java
-package my.package.namespace;
-
-import android.app.Application;
-import org.apache.cordova.core.ParsePlugin;
-
-public class App extends Application {
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        ParsePlugin.initializeParseWithApplication(this);
-    }
-
-}
-```
-
-And add your application name to `AndroidManifest.xml`:
-
-```xml
-<application android:name="my.package.namespace.App" ... >...</application>
-```
-
-
 Compatibility
 -------------
 - Phonegap/Cordova > 3.0
