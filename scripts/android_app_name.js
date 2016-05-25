@@ -19,7 +19,7 @@ module.exports = function(context) {
                 throw new Error('Unable to find AndroidManifest.xml: ' + err);
             }
 
-            var appClass = 'res.main.MainApp';
+            var appClass = 'src.main.MainApp';
 
             if (data.indexOf(appClass) == -1) {
 

@@ -1,4 +1,4 @@
-package res.main;
+package src.main;
 
 import android.app.Application;
 import org.apache.cordova.core.ParsePlugin;
