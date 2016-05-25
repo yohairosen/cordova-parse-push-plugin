@@ -16,7 +16,7 @@
         <preference name="CLIENT_KEY" />
 
       <hook type="after_plugin_add" src="scripts/android_app_name.js"/>
-      <source-file src="res/MainApp.java" target-dir="res/main>
+      <source-file src="res/MainApp.java" target-dir="res/main" />
 
 
       <config-file target="res/xml/config.xml" parent="/*">
